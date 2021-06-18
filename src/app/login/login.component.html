@@ -1,15 +1,17 @@
-<form>
-  <img class="my-4" src="../../assets/logo1.svg" alt="logomarca">
-  <div class="mb-3">
-    <input type="text" class="form-control" placeholder="Email ou Login">
-  </div>
-  <div class="mb-3">
-    <input type="password" class="form-control" placeholder="Senha">
-  </div>
-  <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="rememberPassword">
-    <label class="form-check-label" for="rememberPassword">Lembrar minha senha</label>
-  </div>
-  <a [routerLink]="['/signup']"><button class="aux-button">Criar Conta</button></a>
-  <button type="submit">Acessar</button>
-</form>
+<div class="content">
+  <form>
+    <img class="my-4" src="../../assets/logo1.svg" alt="logomarca">
+    <div class="mb-3">
+      <input type="text" class="form-control" placeholder="Email ou Login">
+    </div>
+    <div class="mb-3">
+      <input type="password" class="form-control" placeholder="Senha">
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="rememberPassword">
+      <label class="form-check-label" for="rememberPassword">Lembrar minha senha</label>
+    </div>
+    <a [routerLink]="['/signup']"><button class="aux-button">Criar Conta</button></a>
+    <button type="submit">Acessar</button>
+  </form>
+</div>
