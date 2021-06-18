@@ -75,3 +75,11 @@ form input {
   border: 1px solid var(--primary-color);
   background-color: var(--primary-color);
 }
+
+.navbar-light .navbar-nav .nav-item .nav-link {
+  color: var(--primary-color);
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover {
+  color: #90D3D7;
+}
