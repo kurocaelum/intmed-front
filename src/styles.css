@@ -59,4 +59,19 @@ form input {
   border-radius: 4px;
 }
 
+.form-check > input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: 1px solid #34495E;
+  border-radius: 4px;
+  outline: none;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
 
+.form-check > input:checked {
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+}
