@@ -1,5 +1,6 @@
 :root {
   --primary-color: #49B4BB;
+  --primary-hover: #90D3D7;
   --secondary-hover: #D9F1F3;
 }
 
@@ -41,7 +42,7 @@ form button {
 }
 
 form button:hover {
-  background-color: #90D3D7;
+  background-color: var(--primary-hover);
 }
 
 form button.aux-button {
@@ -81,5 +82,5 @@ form input {
 }
 
 .navbar-light .navbar-nav .nav-item .nav-link:hover {
-  color: #90D3D7;
+  color: var(--primary-hover);
 }

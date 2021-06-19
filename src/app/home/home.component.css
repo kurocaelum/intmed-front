@@ -1,0 +1,13 @@
+button {
+  border-color: var(--primary-color);
+  padding: auto;
+  /* border: 0; */
+  background-color: var(--primary-color);
+  transition: background-color 200ms;
+}
+
+button:hover {
+  border-color: var(--primary-hover);
+  /* border: 0; */
+  background-color: var(--primary-hover);
+}
