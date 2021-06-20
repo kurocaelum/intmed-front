@@ -1,18 +1,18 @@
 <div class="content">
-  <form>
+  <form (ngSubmit)="onSubmit()" #form="ngForm">
     <img class="my-4" src="../../assets/logo1.svg" alt="logomarca">
     <p>Crie sua conta</p>
     <div class="mb-3">
-      <input type="text" class="form-control" placeholder="Nome">
+      <input type="text" class="form-control" [(ngModel)]="account.name" name="nome" placeholder="Nome" required>
     </div>
     <div class="mb-3">
-      <input type="text" class="form-control" placeholder="Email">
+      <input type="text" class="form-control" [(ngModel)]="account.email" name="email" placeholder="Email" required>
     </div>
     <div class="mb-3">
-      <input type="password" class="form-control" placeholder="Senha">
+      <input type="password" class="form-control" [(ngModel)]="account.password" name="password" placeholder="Senha" required>
     </div>
     <div class="mb-3">
-      <input type="password" class="form-control" placeholder="Confirmar Senha">
+      <input type="password" class="form-control" name="passwordConfirm" placeholder="Confirmar Senha" required>
     </div>
     <a [routerLink]="['/login']"><button class="aux-button">Cancelar</button></a>
     <button type="submit">Confirmar</button>
