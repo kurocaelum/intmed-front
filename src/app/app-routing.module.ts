@@ -4,12 +4,14 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './authentication/login/login.component';
 import { SignupComponent } from './authentication/signup/signup.component';
 import { AuthenticationComponent } from './authentication/authentication.component';
+import { AuthGuard } from './shared/auth.guard';
 
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
-    children: []
+    children: [],
+    canActivate: [AuthGuard]
   },
   {
     path: '',
