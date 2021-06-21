@@ -10,7 +10,7 @@ import { AccountService } from 'src/app/shared/account.service';
 export class LoginComponent implements OnInit {
 
   login = {
-    email: '',
+    username: '',
     password: ''
   }
 
