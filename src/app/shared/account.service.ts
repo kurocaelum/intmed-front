@@ -21,10 +21,8 @@ export class AccountService {
     return false
   }
 
-  // TODO apenas simulando request a API
-  signup (account: any) {
-    return new Promise( (resolve) => {
-      resolve(true)
-    })
+  async signup (account: any) {
+    const result = await this.http.post<any>(`${environment.api}/users`, account).toPromise()
+    return result
   }
 }

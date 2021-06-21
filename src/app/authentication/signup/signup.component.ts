@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AccountService } from 'src/app/shared/account.service';
 
 @Component({
   selector: 'imf-signup',
@@ -8,16 +9,24 @@ import { Component, OnInit } from '@angular/core';
 export class SignupComponent implements OnInit {
 
   account = {
-    name: '',
+    username: '',
     email: '',
     password: ''
   }
 
-  constructor() { }
+  constructor(private accountService: AccountService) { }
 
   ngOnInit(): void {
   }
 
-  onSubmit() {}
+  async onSubmit() {
+    try {
+      const result = await this.accountService.signup(this.account)
+
+      console.log(result)
+    } catch (error) {
+      console.error(error)
+    }
+  }
 
 }
